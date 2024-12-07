@@ -1,0 +1,16 @@
+imbalanced-learn==0.12.2
+imblearn==0.0
+joblib==1.4.2
+keyboard==0.13.5
+numpy==1.24.4
+pandas==2.0.3
+psutil==5.9.8
+python-dateutil==2.9.0.post0
+pytz==2024.1
+scapy==2.5.0
+scikit-learn==1.2.2
+scipy==1.10.1
+six==1.16.0
+threadpoolctl==3.5.0
+tzdata==2024.1
+xgboost==2.0.3

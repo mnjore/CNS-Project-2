@@ -1,7 +1,6 @@
 from scapy.all import *
 import psutil
 
-
 class packetDetails:
     # Initializes object to store detailed packet information such as source, destination, protocol etc. 
     def __init__(self):
@@ -237,15 +236,6 @@ class packetDetails:
 
     def getWinBytes(self):
         return self.win_bytes
-
-    # def getMss(self):
-    #     return self.mss
-
-    # def setMss(self, pkt):
-    #     if pkt.haslayer(TCP):
-    #         for option_kind, option_data in pkt[TCP].options:
-    #             if option_kind == 'MSS':
-    #                 self.mss = option_data
     
     # Returns the Type of Service (ToS) value from the IP header
     def getTos(self):
@@ -281,7 +271,3 @@ class packetDetails:
     # Returns the backward flow ID
     def getBwdID(self):
         return self.bwd_id 
-# pkt = packetDetails()
-# sniff(prn = pkt.setProtocol, count=1)
-# print(pkt.getProtocol())
-    

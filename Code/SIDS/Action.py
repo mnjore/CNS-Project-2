@@ -6,10 +6,11 @@ class Action(Enum):
     ALERT = 1 # raise alert
     PASS = 2 # ignore
 
-    # Returnn action corresponding to the string
+    # Return action corresponding to the string
     def action(istr):
         
         action = istr.lower().strip() # Normalize the input string
+        
         try: 
             if(action == "alert"):
                 return Action.ALERT

@@ -36,5 +36,5 @@ class IPs:
         return (ip in self.ipn)
 
     def __repr__(self):
-        #Return tring representation in String
+        #Return string representation in String
         return self.ipn.__repr__()

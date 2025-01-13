@@ -65,7 +65,7 @@ def displayMatchedIP(ip, rule):
     print ("\t Protocol: " + str(ip.proto))
     print ("\t Header Checksum: " + str(ip.chksum))
 
-    # If the IP was specified uniquely, prin in red
+    # If the IP was specified uniquely, print in red
     if (rule.srcIp.ipn.num_addresses == 1):
         print (RED + "\t Source: " + str(ip.src) + ENDC)
     else:

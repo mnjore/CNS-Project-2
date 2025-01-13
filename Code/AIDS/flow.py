@@ -351,14 +351,4 @@ class Flow:
                 self.flowFeatures.getIdleStd(),
                 self.flowFeatures.getIdleMax(),
                 self.flowFeatures.getIdleMin(),
-                
-                # self.flowFeatures.getSrc(),
-                # self.flowFeatures.getSrcPort(),
-                # self.flowFeatures.getDest(),
-                # self.flowFeatures.getProtocol(),
-                # datetime.fromtimestamp(self.getFlowStartTime()),
-                # datetime.fromtimestamp(self.getFlowLastSeen()),
-                
-                # self.flowFeatures.getPName(),
-                # self.flowFeatures.getPID(),
                 ]

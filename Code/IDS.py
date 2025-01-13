@@ -50,7 +50,7 @@ if __name__ == '__main__':
 
     # argument parser to handle file path input
     parser = argparse.ArgumentParser(description='Simple NIDS')
-    parser.add_argument('-f', '--filename', help='Path to the rule file', default=r'C:\Users\LENOVO\OneDrive\Documents\Ü\4\CNS Project 2\Intrusion-Detection-System-main\Intrusion-Detection-System-main\IDS_Final\SIDS\rules.txt')
+    parser.add_argument('-f', '--filename', help='Path to the rule file', default=r'C:\Users\LENOVO\OneDrive\Documents\U\4\CNS Project 2\Intrusion-Detection-System-main\Intrusion-Detection-System-main\IDS_Final\SIDS\rules.txt')
     args = parser.parse_args()
     
     ruleList = list()

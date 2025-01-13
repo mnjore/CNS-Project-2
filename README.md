@@ -13,76 +13,20 @@ This project aims to develop a Hybrid Network Intrusion Detection System (NIDS) 
 - slowhttptest
 ## Installation
 To install the IDS, follow these steps:
-1. Install an OS that can install a Python version between 3.8 to 3.9:
+1. Install Python version 3.8 or later.
 
-* This can be found at https://releases.ubuntu.com/
-
-2. Install various tools to be used:
+2. Install the required python packages:
 
 ```
-$ sudo apt install vim
-$ sudo apt install python3-pip
-$ sudo apt install git
-```
-
-3. Install Mininet for network simulation:
-
-```
-$ sudo apt install mininet
-```
-
-4. Install XTerm terminal emulator:
-
-```
-$ sudo apt install xterm
-```
-
-4. Install Scapy for packet generation:
-
-```
-$ sudo apt-get install python3-scapy
-```
-
-5. Install the SDN controller (POX is used here):
-
-```
-$ pip install pox
-$ git clone http://github.com/noxrepo/pox
+$ pip install -r requirements.txt
 ```
 
 ## Usage
-To use the DDoS attack detection model, follow these steps:
-
-1. Create a Mininet topology by entering the following command:
+To use the Hybrid IDS run the following command, replacing the file path for the rules.txt file:
 
 ```
-$ sudo mn --switch ovsk --topo tree,depth=2,fanout=8 --controller=remote,ip=127.0.0.1,port=6633
+$ python3 IDS.py -f "C:\Users\LENOVO\OneDrive\Documents\U\4\CNS Project 2\Intrusion-Detection-System-main\Intrusion-Detection-System-main\IDS_Final\SIDS\rules.txt"
 ```
-
-2. Run the Pox controller in a separate terminal:
-
-```
-$ cd pox
-$ python3 ./pox.py forwarding.l3_learning_edited
-```
-
-3. Run Xterm on a host and generate traffic:
-
-```
-$ xterm h1
-$ python3 traffic.py –f 2 –l 64
-```
-
-Where f = first value and l = last value of the number of hosts we want to send packets. After the successful completion of the above steps, you can see the entropy values on the POX controller terminal.
-
-4. Launch the DDoS attack on a specific host:
-
-```
-$ python3 ddos_attack.py 10.0.0.64
-```
-
-After the successful completion of the above steps, you can see that the DDoS attack has been detected on the POX controller terminal. 
-
 
 ## Contributing 
 Advice and contributions are welcome! Please submit a pull request if you have any suggestions, improvements, or bug fixes.

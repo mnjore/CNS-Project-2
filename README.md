@@ -1,4 +1,4 @@
-#  A Hybrid Network Intrusion Detection System Using Machine Learning
+#  A Hybrid Network Intrusion Detection System Using XGBoost
 # Overview
 This project aims to develop a Hybrid Network Intrusion Detection System (NIDS) by combining machine learning techniques to enhance the detection of network intrusions. The system leverages both traditional rule-based and machine learning-based approaches to provide a more robust mechanism for identifying malicious network activities.
 ## Technologies Used

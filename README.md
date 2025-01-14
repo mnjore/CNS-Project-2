@@ -1,6 +1,6 @@
 #  A Hybrid Network Intrusion Detection System Using XGBoost
 # Overview
-This project aims to develop a Hybrid Network Intrusion Detection System (NIDS) by combining machine learning techniques to enhance the detection of network intrusions. The system leverages both traditional rule-based and machine learning-based approaches to provide a more robust mechanism for identifying malicious network activities.
+This project is a **Network Intrusion Detection System (NIDS)** that combines Signature-based Intrusion Detection (SIDS) and Anomaly-based Intrusion Detection (AIDS) techniques to identify and mitigate potential cyber threats. The system is implemented in Python, leveraging libraries like Scapy for packet sniffing, XGBoost for anomaly detection, and additional utilities for data manipulation and rule-based filtering. It uses a rule file to identify known malicious patterns and machine learning models to detect deviations from normal network behavior. The project includes tools such as `keyboard` for real-time control, logging for activity tracking, and argparse for dynamic file input. It provides an interactive framework to analyze live network traffic, log suspicious activities, and stop monitoring upon user command, ensuring efficient and dynamic protection against both known and unknown threats.
 ## Technologies Used
 - VirtualBox
 - Kali
